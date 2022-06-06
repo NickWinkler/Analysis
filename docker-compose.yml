@@ -1,0 +1,11 @@
+version: "3"
+services:
+  jupyter:
+    image: nwink/jupyterlab:initial
+    ports:
+      - 8888:8888
+    volumes:
+      - ./shared:/shared
+#volumes:
+#  my_volume:
+#    external: true
